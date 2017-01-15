@@ -10,6 +10,6 @@ describe ('two sum', function() {
   // edge case: an index's value plus itself adds up to the desired amount.
   // For example: ([1,2,3,4,5],8). 4 + 4 could work. But we want 2 unique indices. Test that this edge case is prevented.
   it('should not return the same index twice', function() {
-    assert.equal([2,4], code.sumFinder([1,2,3,4,5],8));
+    assert.deepEqual([2,4], code.sumFinder([1,2,3,4,5],8));
   });
 });
